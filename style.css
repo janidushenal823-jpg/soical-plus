@@ -286,3 +286,139 @@ footer img{
     align-items:center;
     justify-content:center;
 }
+
+
+html,body{
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+}
+
+@media(max-width:1024px){
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    section{
+        padding:80px 5%;
+    }
+
+    .navbar{
+        padding:15px 5%;
+    }
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        position:relative;
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    nav{
+        width:100%;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:12px;
+    }
+
+    nav a{
+        font-size:0.95rem;
+    }
+
+    .hero{
+        min-height:100vh;
+        padding:60px 20px;
+        text-align:center;
+        justify-content:center;
+        background-size:70%;
+    }
+
+    .hero-content{
+        width:100%;
+    }
+
+    .hero h1{
+        font-size:2.3rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+        line-height:1.7;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .section-title h2{
+        font-size:2.2rem;
+    }
+
+    .about-grid,
+    .service-grid,
+    .social-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-form{
+        width:100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea{
+        width:100%;
+    }
+
+    .form-actions{
+        flex-direction:column;
+    }
+
+    .whatsapp-box{
+        width:100%;
+    }
+
+    footer{
+        padding:50px 20px;
+    }
+
+    .footer-links{
+        gap:15px;
+    }
+}
+
+@media(max-width:480px){
+
+    .hero{
+        background-size:85%;
+    }
+
+    .hero h1{
+        font-size:1.9rem;
+    }
+
+    .section-title h2{
+        font-size:1.8rem;
+    }
+
+    .about-card,
+    .service-card,
+    .social-card,
+    .whatsapp-box{
+        padding:25px;
+    }
+
+    .logo-area img{
+        width:140px;
+    }
+}
