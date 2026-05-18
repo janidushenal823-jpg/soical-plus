@@ -1,0 +1,268 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#000;
+    color:white;
+}
+
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:18px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    backdrop-filter:blur(10px);
+    background:rgba(0,0,0,0.5);
+    z-index:999;
+}
+
+.logo-area img{
+    width:170px;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#ffd000;
+}
+
+.btn{
+    background:#ffd000;
+    color:black;
+    padding:12px 24px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+    transition:0.3s;
+    display:inline-block;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(255,208,0,0.3);
+}
+
+.secondary{
+    background:transparent;
+    border:2px solid #ffd000;
+    color:#ffd000;
+}
+
+.hero{
+    height:100vh;
+    background:linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.5)),
+    url('logo.jpg') center/contain no-repeat;
+    display:flex;
+    align-items:center;
+    padding:0 7%;
+    position:relative;
+}
+
+.hero-content{
+    max-width:700px;
+}
+
+.hero h1{
+    font-size:4rem;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#ffd000;
+}
+
+.hero p{
+    font-size:1.1rem;
+    color:#ccc;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+section{
+    padding:100px 7%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:3rem;
+    color:#ffd000;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#bbb;
+}
+
+.about-grid,
+.service-grid,
+.social-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.about-card,
+.service-card,
+.social-card{
+    background:#111;
+    border:1px solid rgba(255,208,0,0.15);
+    padding:35px;
+    border-radius:25px;
+    transition:0.3s;
+}
+
+.about-card:hover,
+.service-card:hover,
+.social-card:hover{
+    transform:translateY(-10px);
+    border-color:#ffd000;
+    box-shadow:0 15px 30px rgba(255,208,0,0.1);
+}
+
+.about-card h3,
+.service-card h3,
+.social-card h3{
+    color:#ffd000;
+    margin-bottom:15px;
+    font-size:1.5rem;
+}
+
+.about-card p,
+.service-card p,
+.social-card p{
+    color:#ccc;
+    line-height:1.8;
+}
+
+.social-card{
+    text-decoration:none;
+}
+
+.contact-form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    background:#111;
+    border:1px solid #333;
+    padding:18px;
+    border-radius:15px;
+    color:white;
+    font-size:1rem;
+}
+
+.contact-form textarea{
+    min-height:180px;
+    resize:none;
+}
+
+footer{
+    text-align:center;
+    padding:60px 7%;
+    border-top:1px solid #222;
+}
+
+footer img{
+    width:150px;
+    margin-bottom:15px;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin:25px 0;
+    flex-wrap:wrap;
+}
+
+.footer-links a{
+    color:#ffd000;
+    text-decoration:none;
+}
+
+.copy{
+    color:#777;
+    margin-top:15px;
+}
+
+@media(max-width:900px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav{
+        gap:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        text-align:center;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:2.7rem;
+    }
+}
+
+
+.whatsapp-box{
+    margin-top:40px;
+    text-align:center;
+    background:#111;
+    border:1px solid rgba(255,208,0,0.2);
+    padding:35px;
+    border-radius:25px;
+    max-width:500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.whatsapp-box h3{
+    color:#ffd000;
+    margin-bottom:10px;
+    font-size:2rem;
+}
+
+.whatsapp-box p{
+    color:#fff;
+    font-size:1.2rem;
+    margin-bottom:20px;
+}
