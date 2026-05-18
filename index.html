@@ -144,13 +144,17 @@
   <div class="section-title">
     <h2>Let’s Work Together</h2>
     <p>Ready to build your brand with powerful visuals?</p>
+    <p class="small-note">Fill the form and it will open your email app or WhatsApp with the message ready to send.</p>
   </div>
 
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name">
-    <input type="email" placeholder="Your Email">
-    <textarea placeholder="Tell us about your project"></textarea>
-    <button type="submit" class="btn">Send Message</button>
+  <form class="contact-form" id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Tell us about your project" required></textarea>
+    <div class="form-actions">
+      <button type="submit" class="btn">Send via Email</button>
+      <a class="btn secondary" id="whatsappBtn" href="#" target="_blank" rel="noopener">Send via WhatsApp</a>
+    </div>
   </form>
 
 <div class="whatsapp-box">
@@ -167,9 +171,11 @@
   <p>Creative Media Agency • Videography • Photography • Social Promotion</p>
 
   <div class="footer-links">
-    <a href="https://www.tiktok.com/@social.plus_?is_from_webapp=1&sender_device=pc" target="_blank">TikTok</a>
-    <a href="https://www.facebook.com/share/1C6scTCZXG/?mibextid=wwXIfr" target="_blank">Facebook</a>
-    <a href="https://youtube.com/@social_plus.x?si=6GaQ1Pe63cJ5zg1Z" target="_blank">YouTube</a>
+    <a href="mailto:janidushenal835@gmail.com">Email Us</a>
+    <a href="https://wa.me/94772385652" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="https://www.tiktok.com/@social.plus_?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener">TikTok</a>
+    <a href="https://www.facebook.com/share/1C6scTCZXG/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://youtube.com/@social_plus.x?si=6GaQ1Pe63cJ5zg1Z" target="_blank" rel="noopener">YouTube</a>
   </div>
 
   <p class="copy">© 2026 Social Plus. All Rights Reserved.</p>
